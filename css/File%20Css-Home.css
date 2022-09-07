@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .wrapper-text {
+    margin: 0;
+    font-size: 120px;
+    background-image: url("../images/04-sunset-1257988_960_720.jpg")  ;
+    background-repeat: repeat;
+    background-position: center;
+    -webkit-background-clip: text;
+    animation: anim 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(225, 225, 225, 0);
+    font-weight: 900;
+}
+
+@keyframes anim {
+
+    0%,
+    100% {
+        background-position: top left;
+    }
+
+    25% {
+        background-position: center bottom;
+    }
+
+    50% {
+        background-position: center;
+    }
+
+    75% {
+        background-position: top right;
+    }
+}
+
+@media (max-width:768px) {
+    .wrapper .wrapper-text {
+        font-size: 80px;
+    }
+}
+
+@media (max-width:576px) {
+    .wrapper .wrapper-text {
+        font-size: 59px;
+    }
+}

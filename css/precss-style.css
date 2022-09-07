@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('./File Css/Home.css');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+::-webkit-scrollbar {
+    background-color: #000;
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: wheat;
+    border-radius: 2px;
+}
+
+.show {
+    display: flex !important;
+    flex-direction: column;
+    order: 3 !important;
+    flex-wrap: wrap;
+    margin-top: 60px !important;
+    flex-basis: 100%;
+}
+
+
+
+.navbar-theme {
+    height: 100% !important;
+    align-items: flex-start !important;
+}
+
+
+/* ++++++++++++++++++++++++++++++++ Header Style Starting ++++++++++++++++++++++++++++++++*/
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+
+
+header .navbar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 25px 80px !important;
+    z-index: 999;
+    width: 100%;
+    height: auto;
+}
+
+.navbar .logo1 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none !important;
+}
+
+.navbar .logo1 span {
+    font-weight: 300 !important;
+    color: red;
+}
+
+.navbar ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+}
+
+.navbar ul li {
+    margin: 20px;
+    outline: none !important;
+}
+
+.navbar ul li a {
+    outline: none !important;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #949494;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+}
+
+/* NavMenu */
+#navMenu>span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+}
+
+#navMenu>span:not(:last-child) {
+    margin-bottom: 7px !important;
+}
+
+#navMenu,
+#navMenu>span {
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+#navMenu.active {
+    transition-delay: 0.8s;
+    transform: rotate(45deg)
+}
+
+#navMenu.active>span:nth-child(2) {
+    width: 0;
+}
+
+#navMenu.active>span:nth-child(1),
+#navMenu.active>span:nth-child(3) {
+    transition-delay: .4s;
+}
+
+#navMenu.active>span:nth-child(1) {
+    transform: translateY(9px);
+}
+
+#navMenu.active>span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+}
+
+/* Navbar Jiesula */
+
+
+
+/* ++++++++++++++++++++++++++++++++ My Skills Style Starting  ++++++++++++++++++++++++++++++++*/
+section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #000 !important;
+}
+
+section .navbar {
+    width: 100%;
+    padding: 15px 80px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(11px);
+    transition: 500ms !important;
+}
+
+.fixedNavbar {
+    transition: 500ms !important;
+    position: fixed;
+    top: 0;
+}
+
+section .text-tittle {
+    text-align: center;
+}
+
+section .mySkills h2,
+section .Cards h2,
+section .text-tittle h2 {
+    color: #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+
+}
+
+section .text-tittle .text-body {
+    font-size: 24px;
+    color: #fff !important;
+}
+
+
+
+section .mySkills .splide .splide__list .splide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .mySkills img {
+    max-width: 150px;
+}
+
+section .splide__pagination {
+    display: none !important;
+}
+
+/*++++++++++++++++++++++++++++++++ Cards Style starting ++++++++++++++++++++++++++++++++*/
+
+section .Cards {
+    background-color: #000;
+    padding: 60px 0 100px 0;
+}
+
+section .Cards .text-tittle {
+    margin-bottom: 80px;
+}
+
+section .Cards h2 {
+    color: white;
+    font-weight: 700;
+    border-color: #000;
+}
+
+section .Cards .box h4 {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+
+section .Cards .box {
+    padding: 60px 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    
+    width: 100%;
+    
+
+    section .Cards .box .box-item {
+    transition: 300ms;
+}
+
+section .Cards .box:hover>.box-item {
+    transform: scale(1.2);
+}
+
+/* ++++++++++++++++++++++++++++++++ Header Bosh Menyu Starting ++++++++++++++++++++++++++++++++ */
+header {
+    height: 780px;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -10 !important;
+}
+
+header .mainPage {
+    position: absolute;
+    left: 0%;
+    top: 28%;
+    padding: 0px 80px;
+}
+
+header .mainPage h1 {
+    font-weight: 700;
+    color: red !important;
+    margin-top: 40px;
+    font-size: 70px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header .mainPage p {
+    color: #aaa;
+    margin: 15px 3px 40px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header .mainPage .hrefWrap a,
+section .bannerPage .btn-wrap a {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #2b2b2b;
+    padding: 17px 40px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header .mainPage .hrefWrap .resume,
+section .bannerPage .btn-wrap .demolink {
+    background-color: #fff;
+    color: #000;
+    margin-left: 10px;
+}
+
+header .mainPage .linkWrap {
+    margin-top: 45px;
+    padding: 0 20px;
+}
+
+header .mainPage .linkWrap a {
+    margin-right: 30px;
+}
+
+header .mainPage .linkWrap a i {
+    color: #fff;
+    transition: 500ms ease;
+    font-size: 30px;
+}
+
+header .mainPage .linkWrap a i:hover {
+    color: #fff;
+}
+
+header img {
+    border-radius: 200000% !important;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++ Bannner Page Portfolio style starting ++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+section .bannerPage {
+    background-color: #000;
+    padding-bottom: 70px;
+}
+
+section .bannerPage p {
+    color: #AAAAAA;
+}
+
+
+/*++++++++++++++++++++++++++++++++  My Technology style starting++++++++++++++++++++++++++++++++  */
+
+section .myTechnology {
+    background-color: gray;
+    padding: 80px;
+}
+
+section .myTechnology .text-tittle {
+    margin-bottom: 50px;
+}
+
+section .myTechnology .text-tittle h2 {
+    color: #000;
+    border-color: #000;
+}
+
+section .myTechnology .box {
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 16px 0;
+}
+
+section .myTechnology .box .row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .myTechnology .box .img-box {
+
+    margin-bottom: 25px !important;
+}
+
+section .myTechnology .box img {
+    height: calc(15.71429px + 5.34821vw);
+}
+
+section .myTechnology .box p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ++++++++++++++++++++++++++++++++ Footer Starting ++++++++++++++++++++++++++++++++  */
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px solid white;
+}
+
+footer .text-body p {
+    color: grey;
+    font-size: 17px;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer .text-body p span {
+    color: grey;
+}
+
+
+/* ++++++++++++++++++++++++++++++++ Use Starting ++++++++++++++++++++++++++++++++  */
+
+.SetPage {
+    padding-top: 80px;
+}
+
+.SetPage .navbar {
+    background-color: #000 !important;
+    top: 0;
+}
+
+.SetPage img {
+    height: calc(15.71429px + 19.34821vw);
+}
+
+
+
+
+
+
+/* ++++++++++++++++++++++++++++++++ Media Starting ++++++++++++++++++++++++++++++++  */
+
+
+
+
+/* ++++++++++++++++++++++++++++++++ Min 1400px Starting ++++++++++++++++++++++++++++++++  */
+
+@media (min-width:1400px) {
+
+    /* Home Page Media Style */
+    header .mainPage {
+        top: 23%;
+    }
+}
+
+/* ++++++++++++++++++++++++++++++++ Max 1400px starting ++++++++++++++++++++++++++++++++ */
+@media (max-width:1400px) {
+    header .mainPage {
+        top: 34%;
+    }
+
+    header .mainPage p {
+        font-size: 19px;
+    }
+}
+
+/* ++++++++++++++++++++++++++++++++ 1200px starting ++++++++++++++++++++++++++++++++ */
+
+@media (max-width:1200px) {
+    header .mainPage {
+        top: 30% ;
+        padding: 0px 70px;
+    }
+
+
+    header .mainPage p {
+        font-size: 15px;
+        margin: 15px 3px 30px;
+    }
+
+    header .mainPage .hrefWrap a {
+        padding: 13px 32px ;
+        font-size: 18px;
+    }
+
+    header .mainPage .linkWrap {
+        margin-top: 30px ;
+    }
+
+    /* ++++++++++++++++++++++++++++++++ My Skils Media Query style 1200px starting ++++++++++++++++++++++++++++++++ */
+    section .myTechnology .box h4 {
+        font-size: 20px;
+    }
+
+
+}
+
+/* ++++++++++++++++++++++++++++++++ 992px starting ++++++++++++++++++++++++++++++++ */
+
+@media (max-width:992px) {
+
+    header .mainPage {
+        top: 27%;
+        padding: 0px 45px;
+    }
+
+    header .mainPage h1 {
+        font-size: 53px ;
+    }
+
+    header .navbar ul li {
+        margin: 15px;
+    }
+
+    header .navbar {
+        padding: 35px 40px ;
+    }
+
+    header .mainPage p {
+        font-size: 17px;
+    }
+
+    /* ============= Section Portfolio Page Media Style Starting ============= */
+    section .navbar ul li {
+        margin: 15px;
+    }
+
+    section .navbar {
+        padding: 10px 10px 10px 40px !important;
+    }
+
+    section .text-tittle {
+        margin-top: 30px;
+    }
+
+    section .bannerPage .btn-wrap a {
+        padding: 8px 19px !important;
+        font-size: 16px !important;
+    }
+
+    section .bannerPage h2 {
+        color: #fff;
+        font-size: 28px;
+    }
+
+    section .bannerPage .img-box {
+        margin-bottom: 20px;
+    }
+
+    /* ============= Section My Skills Page Media Style Starting ============= */
+
+    section .Cards {
+        padding: 60px 0 0px 0;
+    }
+
+    section .myTechnology .box p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+}
+
+/* ++++++++++++++++++++++++++++++++ MIN-768px starting ++++++++++++++++++++++++++++++++ */
+
+@media (min-width:768px) {
+
+
+    .navbar .navs {
+        display: flex;
+    }
+
+    #navMenu {
+        display: none;
+    }
+
+
+}
+
+/* ++++++++++++++++++++++++++++++++ MAX-768px starting ++++++++++++++++++++++++++++++++ */
+
+@media (max-width:768px) {
+    header .mainPage {
+        top: 15% ;
+        padding: 0px 50px;
+    }
+
+    header .navbar {
+        padding: 30px;
+        backdrop-filter: blur(8px);
+    }
+
+    #navMenu {
+        display: block;
+        transition: 200ms;
+    }
+
+    .navbar .navs {
+        display: none;
+    }
+
+    header .mainPage h1 {
+        font-size: 70px ;
+        padding: 0 5px;
+    }
+
+    header .mainPage p {
+        font-size: 17px;
+        margin: 15px 3px 20px ;
+    }
+
+    .navbar .navbar-toggler {
+        display: flex;
+        order: 3 !important;
+    }
+
+    header .mainPage .linkWrap {
+        margin-top: 20px;
+    }
+
+    header .mainPage .linkWrap a {
+        margin: 0 12px ;
+    }
+
+    /* ++++++++++++++++++++++++++++++++ My Skills Max 768px starting ++++++++++++++++++++++++++++++++ */
+    section .myTechnology {
+        padding: 40px;
+    }
+
+    section .mySkills h2 {
+        font-size: 27px;
+    }
+
+    section .mySkills img {
+        max-width: 130px;
+    }
+
+    section .myTechnology .box p {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    /* ++++++++++++++++++++++++++++++++ Google Forum Page Max 768px starting ++++++++++++++++++++++++++++++++ */
+    .SetPage {
+        padding-top: 50px;
+    }
+
+    .SetPage .navbar {
+        position: fixed;
+        top: 0;
+        background-color: #000 !important;
+    }
+
+    .SetPage .navbar ul li a {
+        color: #fff !important;
+    }
+
+}
+
+/* ++++++++++++++++++++++++++++++++ 576px starting ++++++++++++++++++++++++++++++++ */
+
+@media (max-width:576px) {
+    header .mainPage {
+        padding: 0;
+        top: 21% ;
+        overflow: hidden ;
+    }
+
+
+
+    header .mainPage h1 {
+        font-size: 55px ;
+        padding: 0px;
+    }
+
+    header .mainPage p {
+        font-size: 16px;
+        margin: 40px 0px ;
+    }
+
+    header .mainPage .hrefWrap {
+        text-align: center;
+        margin: 40px 0px;
+    }
+
+    header .mainPage .hrefWrap a {
+        padding: 13px 30px ;
+        margin: 0 11px;
+        font-size: 15px;
+    }
+
+    header .mainPage .linkWrap {
+        padding: 0 ;
+    }
+
+    header .mainPage .linkWrap a {
+        margin: 0px 15px ;
+    }
+
+    /* ============= Section Portfolio Page Media Style Starting ============= */
+
+    section .navbar {
+        padding: 15px 20px !important;
+    }
+
+    /* ++++++++++++++++++++++++++++++++ My Skills Max 576px starting ++++++++++++++++++++++++++++++++ */
+    section .Cards h2 {
+        border: none;
+        font-size: 28px !important;
+    }
+
+    section .Cards .text-tittle {
+        margin-bottom: 50px;
+    }
+
+    section .mySkills img {
+        max-width: 100px;
+    }
+
+    section .mySkills h2 {
+        font-size: 24px;
+        border: none;
+    }
+
+    section .myTechnology .box img {
+        height: calc(15.71429px + 10.34821vw);
+    }
+
+    section .myTechnology .box h4 {
+        font-size: 26px;
+    }
+
+    section .myTechnology .box p {
+        font-size: 15px;
+    }
+
+    footer .text-body p {
+        font-size: 14px;
+    }
+
+}
+
+/* ++++++++++++++++++++++++++++++++ 320px starting ++++++++++++++++++++++++++++++++ */
+
+@media (max-width:320px) {
+
+    .navbar .row {
+        justify-content: center !important;
+    }
+
+    header .mainPage {
+        top: 15%;
+    }
+
+    header .mainPage .hrefWrap {
+        margin: 20px 0px;
+    }
+
+    header .mainPage .hrefWrap a {
+        margin: 8px 0px ;
+    }
+
+    header .mainPage p {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    header .mainPage .linkWrap {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    header .mainPage .linkWrap a {
+        margin: 0 5px;
+    }
+}
