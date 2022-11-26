@@ -9,9 +9,12 @@
   list-style: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+
   text-decoration: none !important;
 }
-
+*::selection{
+  background-color: red;
+}
 ::-webkit-scrollbar {
   background-color: #000;
   width: 3px;
