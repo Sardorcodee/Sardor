@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
-@import url('/precss/File Css/Home.css');
-
-
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +7,7 @@
 
   text-decoration: none !important;
 }
-*::selection{
+*::selection {
   background-color: red;
 }
 ::-webkit-scrollbar {
@@ -21,7 +16,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color:red;
+  background-color: red;
   border-radius: 2px;
 }
 
@@ -74,7 +69,7 @@ header .navbar {
   font-size: 26px;
   font-weight: 400;
   cursor: pointer;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   outline: none !important;
 }
 
@@ -106,7 +101,7 @@ header .navbar {
   text-transform: capitalize;
   font-size: 20px;
   color: #949494;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: lighter;
   -webkit-transition: 100ms;
   -o-transition: 100ms;
@@ -114,28 +109,27 @@ header .navbar {
   cursor: pointer;
 }
 
-.navbar ul li a:hover {
+.navbar .container-fluid  .navs li a:hover {
   color: #fff;
 }
-
 /* NavMenu */
 
-#navMenu>span {
+#navMenu > span {
   display: block;
   width: 28px;
   height: 2px;
   background-color: #fff;
 }
 
-#navMenu>span:not(:last-child) {
+#navMenu > span:not(:last-child) {
   margin-bottom: 7px !important;
 }
 
 #navMenu,
-#navMenu>span {
-  -webkit-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+#navMenu > span {
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
 
@@ -148,24 +142,24 @@ header .navbar {
   transform: rotate(45deg);
 }
 
-#navMenu.active>span:nth-child(2) {
+#navMenu.active > span:nth-child(2) {
   width: 0;
 }
 
-#navMenu.active>span:nth-child(1),
-#navMenu.active>span:nth-child(3) {
-  -webkit-transition-delay: .4s;
-  -o-transition-delay: .4s;
-  transition-delay: .4s;
+#navMenu.active > span:nth-child(1),
+#navMenu.active > span:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
-#navMenu.active>span:nth-child(1) {
+#navMenu.active > span:nth-child(1) {
   -webkit-transform: translateY(9px);
   -ms-transform: translateY(9px);
   transform: translateY(9px);
 }
 
-#navMenu.active>span:nth-child(3) {
+#navMenu.active > span:nth-child(3) {
   -webkit-transform: translateY(-9px) rotate(90deg);
   -ms-transform: translateY(-9px) rotate(90deg);
   transform: translateY(-9px) rotate(90deg);
@@ -174,8 +168,8 @@ header .navbar {
 /* Navbar Jiesula */
 
 /* ++++++++++++++++++++++++++++++++ My Skills Style Starting  ++++++++++++++++++++++++++++++++*/
-.wrapper .wrapper-text{
-    background-image: url("../images/Avatar.jpg")
+.wrapper .wrapper-text {
+  background-image: url("../images/Avatar.jpg");
 }
 section {
   width: 100%;
@@ -189,7 +183,7 @@ section .navbar {
   width: 100%;
   padding: 15px 80px;
   z-index: 999;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(11px);
   backdrop-filter: blur(11px);
   -webkit-transition: 500ms !important;
@@ -287,7 +281,7 @@ section .Cards .box {
   flex-direction: column;
   cursor: pointer;
   width: 100%;
-  background-color:grey;
+  background-color: grey;
 }
 
 section .Cards .box .box-item {
@@ -296,7 +290,7 @@ section .Cards .box .box-item {
   transition: 300ms;
 }
 
-section .Cards .box:hover>.box-item {
+section .Cards .box:hover > .box-item {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -328,20 +322,20 @@ header .mainPage h1 {
   color: #fff !important;
   margin-top: 40px;
   font-size: 70px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 header .mainPage p {
   color: #aaa;
   margin: 15px 3px 40px;
   font-size: 20px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 header .mainPage .hrefWrap a,
 section .bannerPage .btn-wrap a {
   display: inline-block;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background-color: #2b2b2b;
   padding: 17px 40px;
   color: #fff;
@@ -351,7 +345,7 @@ section .bannerPage .btn-wrap a {
 
 header .mainPage .hrefWrap .resume,
 section .bannerPage .btn-wrap .demolink {
-  background-color:red;
+  background-color: red;
   color: #000;
   margin-left: 10px;
 }
@@ -395,7 +389,7 @@ section .bannerPage p {
 /*++++++++++++++++++++++++++++++++  My Technology style starting++++++++++++++++++++++++++++++++  */
 
 section .myTechnology {
-  background-color:black;
+  background-color: black;
   padding: 80px;
 }
 
@@ -457,7 +451,7 @@ footer .text-body p {
   color: #fff;
   font-size: 17px;
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 footer .text-body p span {
@@ -481,7 +475,7 @@ footer .text-body p span {
 
 /* ++++++++++++++++++++++++++++++++ Min 1400px Starting ++++++++++++++++++++++++++++++++  */
 
-@media (min-width:1400px) {
+@media (min-width: 1400px) {
   /* Home Page Media Style */
 
   header .mainPage {
@@ -490,9 +484,7 @@ footer .text-body p span {
 }
 
 /* ++++++++++++++++++++++++++++++++ Max 1400px Starting ++++++++++++++++++++++++++++++++  */
-@media (max-width:1400px) {
-
-
+@media (max-width: 1400px) {
   header .mainPage {
     top: 24%;
     padding: 0px 100px 0;
@@ -505,13 +497,13 @@ footer .text-body p span {
 
 /* ++++++++++++++++++++++++++++++++ Max 1200px Starting ++++++++++++++++++++++++++++++++  */
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   header .mainPage {
     top: 22%;
     padding: 0px 50px;
   }
 
-/* ++++++++++++++++++++++++++++++++ My Skils Media Query style 1200px starting ++++++++++++++++++++++++++++++++ */
+  /* ++++++++++++++++++++++++++++++++ My Skils Media Query style 1200px starting ++++++++++++++++++++++++++++++++ */
 
   section .myTechnology .box h4 {
     font-size: 20px;
@@ -519,7 +511,7 @@ footer .text-body p span {
 }
 /* ++++++++++++++++++++++++++++++++ Max 992px Starting ++++++++++++++++++++++++++++++++  */
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   header .navbar ul li {
     margin: 15px;
   }
@@ -570,7 +562,7 @@ footer .text-body p span {
 }
 
 /* ++++++++++++++++++++++++++++++++ MIN-768px starting ++++++++++++++++++++++++++++++++ */
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .navbar .navs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -583,8 +575,7 @@ footer .text-body p span {
 }
 
 /* ++++++++++++++++++++++++++++++++ Max 768px Starting ++++++++++++++++++++++++++++++++  */
-@media (max-width:768px) {
-
+@media (max-width: 768px) {
   header .navbar {
     padding: 30px;
     -webkit-backdrop-filter: blur(8px);
@@ -611,7 +602,6 @@ footer .text-body p span {
     font-size: 66px;
   }
 
-
   .navbar .navbar-toggler {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -620,7 +610,6 @@ footer .text-body p span {
     -ms-flex-order: 3 !important;
     order: 3 !important;
   }
-
 
   /* ++++++++++++++++++++++++++++++++ My Skills Max 768px starting ++++++++++++++++++++++++++++++++ */
 
@@ -660,7 +649,7 @@ footer .text-body p span {
 
 /* ++++++++++++++++++++++++++++++++ Max 576px Starting ++++++++++++++++++++++++++++++++  */
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
   header .mainPage {
     top: 15%;
   }
@@ -743,7 +732,7 @@ footer .text-body p span {
 
 /* ++++++++++++++++++++++++++++++++ Max 320px Starting ++++++++++++++++++++++++++++++++  */
 
-@media (max-width:320px) {
+@media (max-width: 320px) {
   .navbar .row {
     -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
@@ -783,53 +772,45 @@ footer .text-body p span {
   position: fixed;
   width: 200px;
   height: 200px;
-  top:80%;
+  top: 80%;
   left: 35%;
   border-radius: 0%;
   border: none;
-
-
 }
-@media (min-width:1024px){
-.telrasmim {
-opacity: 0;
-width: 1000px;
-height: 1000px;
-}
-
-}
-@media (min-width:767px){
-.telrasmim {
-opacity: 0;
-width: 1000px;
-height: 1000px;
-}
-
-}
- .telrasmim {
-       position: fixed;
-       width: 200px;
-       height: 200px;
-       top:80%;
-       left: 30%;
-      
-       border: none;
-
-
- }
-@media (min-width:1024px){
+@media (min-width: 1024px) {
   .telrasmim {
     opacity: 0;
     width: 1000px;
     height: 1000px;
   }
-  
 }
-@media (min-width:767px){
+@media (min-width: 767px) {
   .telrasmim {
     opacity: 0;
     width: 1000px;
     height: 1000px;
   }
-  
+}
+.telrasmim {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  top: 80%;
+  left: 30%;
+
+  border: none;
+}
+@media (min-width: 1024px) {
+  .telrasmim {
+    opacity: 0;
+    width: 1000px;
+    height: 1000px;
+  }
+}
+@media (min-width: 767px) {
+  .telrasmim {
+    opacity: 0;
+    width: 1000px;
+    height: 1000px;
+  }
 }
