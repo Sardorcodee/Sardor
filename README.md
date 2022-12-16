@@ -1,2 +1,2 @@
 # sardorcode.ga
-Saytni odini surab Ko'chiring
+Saytni codini surab Ko'chiring😂😂😂

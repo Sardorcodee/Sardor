@@ -1904,7 +1904,7 @@ pre code {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: #ff0000;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -1924,10 +1924,9 @@ pre code {
   text-shadow: 0 0 0 #495057;
 }
 .form-control:focus {
-  color: #495057;
-  background-color: #fff;
-  border-color: #80bdff;
-  outline: 0;
+  border: 2px solid white;
+  outline: 10;
+  color: white;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .form-control::-webkit-input-placeholder {
